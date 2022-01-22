@@ -1,4 +1,4 @@
-### Aaron's Resume
+# Aaron's Resume
 
 ## Available Scripts
 
