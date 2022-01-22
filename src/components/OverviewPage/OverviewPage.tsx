@@ -1,7 +1,7 @@
 import React from "react";
 import PageContainer from "../shared/PageContainer";
 
-const Overview = () => {
+const OverviewPage = () => {
   return (
     <PageContainer>
       <h1>Overview</h1>
@@ -9,4 +9,4 @@ const Overview = () => {
   );
 };
 
-export default Overview;
+export default OverviewPage;
