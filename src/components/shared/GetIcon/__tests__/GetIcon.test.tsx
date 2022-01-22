@@ -7,43 +7,15 @@ interface TestSettings {
 }
 
 const tests = [
-  [
-    "SchoolIcon",
-    {
-      iconName: "SchoolIcon",
-    },
-  ],
-  [
-    "ShowChartIcon",
-    {
-      iconName: "ShowChartIcon",
-    },
-  ],
-  [
-    "PeopleIcon",
-    {
-      iconName: "PeopleIcon",
-    },
-  ],
-  [
-    "LibraryBooksIcon",
-    {
-      iconName: "LibraryBooksIcon",
-    },
-  ],
-  [
-    "MedicalServicesIcon",
-    {
-      iconName: "MedicalServicesIcon",
-    },
-  ],
-  [
-    "ImageIcon",
-    {
-      iconName: "ImageIcon",
-    },
-  ],
-];
+  "SchoolIcon",
+  "ShowChartIcon",
+  "PeopleIcon",
+  "LibraryBooksIcon",
+  "MedicalServicesIcon",
+  "CameraRollIcon",
+  "CodeIcon",
+  "ImageIcon",
+].map((item) => [item, { iconName: item }]);
 
 const renderComponent = (iconName: string) =>
   render(<GetIcon iconName={iconName} />);

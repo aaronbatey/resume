@@ -4,6 +4,8 @@ import PeopleIcon from "@mui/icons-material/People";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import MedicalServicesIcon from "@mui/icons-material/MedicalServices";
 import ImageIcon from "@mui/icons-material/Image";
+import CameraRollIcon from "@mui/icons-material/CameraRoll";
+import CodeIcon from "@mui/icons-material/Code";
 
 const GetIcon = ({ iconName }: { iconName: string }) => {
   switch (iconName) {
@@ -17,6 +19,10 @@ const GetIcon = ({ iconName }: { iconName: string }) => {
       return <LibraryBooksIcon data-testid="LibraryBooksIcon" />;
     case "MedicalServicesIcon":
       return <MedicalServicesIcon data-testid="MedicalServicesIcon" />;
+    case "CameraRollIcon":
+      return <CameraRollIcon data-testid="CameraRollIcon" />;
+    case "CodeIcon":
+      return <CodeIcon data-testid="CodeIcon" />;
     default:
       return <ImageIcon data-testid="ImageIcon" />;
   }

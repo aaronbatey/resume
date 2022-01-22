@@ -10,4 +10,9 @@ describe("ResumeRightCol", () => {
     const { queryByText } = renderComponent();
     expect(queryByText("Experience")).toBeInTheDocument();
   });
+
+  it("should display the Education Section", () => {
+    const { queryByText } = renderComponent();
+    expect(queryByText("Education")).toBeInTheDocument();
+  });
 });
