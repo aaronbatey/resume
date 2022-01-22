@@ -1,7 +1,8 @@
 import React from "react";
+import PageContainer from "../shared/PageContainer";
 
 const Overview = () => {
-  return <div>Overview</div>;
+  return <PageContainer>Overview</PageContainer>;
 };
 
 export default Overview;
