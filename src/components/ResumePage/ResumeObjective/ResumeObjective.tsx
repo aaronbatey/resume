@@ -1,6 +1,6 @@
 import React from "react";
 import { OBJECTIVE, OBJECTIVE_DESCRIPTION } from "./constants";
-import { Card, CardContent, Divider, Typography } from "@mui/material";
+import { Card, CardContent, Typography } from "@mui/material";
 
 const ResumeObjective = () => {
   return (

@@ -1,10 +1,11 @@
-import { Grid } from "@mui/material";
 import React from "react";
+import ResumePersonalDetails from "../ResumePersonalDetails";
+import { Grid } from "@mui/material";
 
 const ResumeLeftCol = () => {
   return (
     <Grid item xs={4}>
-      <div>Left Col</div>
+      <ResumePersonalDetails />
     </Grid>
   );
 };

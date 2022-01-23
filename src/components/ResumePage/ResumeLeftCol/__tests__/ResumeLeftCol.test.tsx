@@ -6,8 +6,8 @@ import ResumeLeftCol from "../ResumeLeftCol";
 const renderComponent = () => render(<ResumeLeftCol />);
 
 describe("ResumeLeftCol", () => {
-  it("should display the left column", () => {
+  it("should display the personal details section", () => {
     const { queryByText } = renderComponent();
-    expect(queryByText("Left Col")).toBeInTheDocument();
+    expect(queryByText("Aaron Batey")).toBeInTheDocument();
   });
 });

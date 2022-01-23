@@ -6,9 +6,9 @@ import ResumePage from "../ResumePage";
 const renderComponent = () => render(<ResumePage />);
 
 describe("ResumePage", () => {
-  it("should display the left column", () => {
+  it("should display the personal details section", () => {
     const { queryByText } = renderComponent();
-    expect(queryByText("Left Col")).toBeInTheDocument();
+    expect(queryByText("Aaron Batey")).toBeInTheDocument();
   });
 
   it("should display the Objective Section", () => {
