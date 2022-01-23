@@ -1,23 +1,25 @@
 import GetIcon from "../../shared/GetIcon";
-import React from "react";
+import React, { Fragment } from "react";
 import { EDUCATION, PAST_EDUCATION } from "./constants";
 import {
   Avatar,
   Card,
   CardContent,
-  CardHeader,
   Divider,
   List,
   ListItem,
   ListItemAvatar,
   ListItemText,
+  Typography,
 } from "@mui/material";
 
 const ResumeEducation = () => {
   return (
     <Card variant="elevation">
-      <CardHeader title={EDUCATION} />
       <CardContent>
+        <Typography variant="h5" gutterBottom component="div">
+          {EDUCATION}
+        </Typography>
         <List>
           {PAST_EDUCATION.map(
             (
@@ -25,7 +27,7 @@ const ResumeEducation = () => {
               i
             ) => {
               return (
-                <>
+                <Fragment key={`${courseName}${collegeName}`}>
                   <ListItem>
                     <ListItemAvatar>
                       <Avatar>
@@ -41,7 +43,7 @@ const ResumeEducation = () => {
                     />
                   </ListItem>
                   {i < PAST_EDUCATION.length - 1 ? <Divider /> : null}
-                </>
+                </Fragment>
               );
             }
           )}

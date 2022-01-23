@@ -1,23 +1,25 @@
 import GetIcon from "../../shared/GetIcon";
-import React from "react";
+import React, { Fragment } from "react";
 import { EXPERIENCE, PAST_EXPERIENCE } from "./constants";
 import {
   Avatar,
   Card,
   CardContent,
-  CardHeader,
   Divider,
   List,
   ListItem,
   ListItemAvatar,
   ListItemText,
+  Typography,
 } from "@mui/material";
 
 const ResumeExperience = () => {
   return (
     <Card variant="elevation">
-      <CardHeader title={EXPERIENCE} />
       <CardContent>
+        <Typography variant="h5" gutterBottom component="div">
+          {EXPERIENCE}
+        </Typography>
         <List>
           {PAST_EXPERIENCE.map(
             (
@@ -32,7 +34,7 @@ const ResumeExperience = () => {
               i
             ) => {
               return (
-                <>
+                <Fragment key={`${jobTitle}${companyName}`}>
                   <ListItem>
                     <ListItemAvatar>
                       <Avatar>
@@ -48,7 +50,7 @@ const ResumeExperience = () => {
                     />
                   </ListItem>
                   {i < PAST_EXPERIENCE.length - 1 ? <Divider /> : null}
-                </>
+                </Fragment>
               );
             }
           )}

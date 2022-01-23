@@ -11,6 +11,11 @@ describe("ResumePage", () => {
     expect(queryByText("Left Col")).toBeInTheDocument();
   });
 
+  it("should display the Objective Section", () => {
+    const { queryByText } = renderComponent();
+    expect(queryByText("Objective")).toBeInTheDocument();
+  });
+
   it("should display the experience Section", () => {
     const { queryByText } = renderComponent();
     expect(queryByText("Experience")).toBeInTheDocument();
