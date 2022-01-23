@@ -14,6 +14,11 @@ const tests = [
   "MedicalServicesIcon",
   "CameraRollIcon",
   "CodeIcon",
+  "LocationOnIcon",
+  "EmailIcon",
+  "LanguageIcon",
+  "LinkedInIcon",
+  "GitHubIcon",
   "ImageIcon",
 ].map((item) => [item, { iconName: item }]);
 
