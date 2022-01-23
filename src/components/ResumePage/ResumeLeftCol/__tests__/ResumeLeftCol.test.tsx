@@ -10,4 +10,9 @@ describe("ResumeLeftCol", () => {
     const { queryByText } = renderComponent();
     expect(queryByText("Aaron Batey")).toBeInTheDocument();
   });
+
+  it("should display the contact info section", () => {
+    const { queryByText } = renderComponent();
+    expect(queryByText("aaron@aaronbatey.com")).toBeInTheDocument();
+  });
 });

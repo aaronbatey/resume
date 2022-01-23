@@ -11,6 +11,11 @@ describe("ResumePage", () => {
     expect(queryByText("Aaron Batey")).toBeInTheDocument();
   });
 
+  it("should display the contact info section", () => {
+    const { queryByText } = renderComponent();
+    expect(queryByText("aaron@aaronbatey.com")).toBeInTheDocument();
+  });
+
   it("should display the Objective Section", () => {
     const { queryByText } = renderComponent();
     expect(queryByText("Objective")).toBeInTheDocument();
