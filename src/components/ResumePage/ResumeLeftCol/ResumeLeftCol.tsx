@@ -1,6 +1,7 @@
 import React from "react";
-import ResumePersonalDetails from "../ResumePersonalDetails";
 import ResumeContactInfo from "../ResumeContactInfo";
+import ResumePersonalDetails from "../ResumePersonalDetails";
+import ResumeSkills from "../ResumeSkills";
 import { Grid } from "@mui/material";
 
 const ResumeLeftCol = () => {
@@ -8,6 +9,7 @@ const ResumeLeftCol = () => {
     <Grid item xs={4}>
       <ResumePersonalDetails />
       <ResumeContactInfo />
+      <ResumeSkills />
     </Grid>
   );
 };

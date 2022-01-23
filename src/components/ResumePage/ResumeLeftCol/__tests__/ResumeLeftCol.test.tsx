@@ -15,4 +15,9 @@ describe("ResumeLeftCol", () => {
     const { queryByText } = renderComponent();
     expect(queryByText("aaron@aaronbatey.com")).toBeInTheDocument();
   });
+
+  it("should display the skills section", () => {
+    const { queryByText } = renderComponent();
+    expect(queryByText("Skills")).toBeInTheDocument();
+  });
 });
