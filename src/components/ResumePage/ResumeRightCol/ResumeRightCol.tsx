@@ -11,7 +11,7 @@ const SecondaryGrid = styled(Grid)`
 
 const ResumeRightCol = () => {
   return (
-    <SecondaryGrid container item xs={8} spacing={2}>
+    <SecondaryGrid container item xs={12} md={8} spacing={2}>
       <Grid item xs={12}>
         <ResumeObjective />
         <ResumeExperience />

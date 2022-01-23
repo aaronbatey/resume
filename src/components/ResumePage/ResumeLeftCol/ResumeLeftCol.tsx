@@ -12,7 +12,7 @@ const PrimaryGrid = styled(Grid)`
 
 const ResumeLeftCol = () => {
   return (
-    <PrimaryGrid item xs={4}>
+    <PrimaryGrid item xs={12} md={4}>
       <ResumePersonalDetails />
       <ResumeContactInfo />
       <ResumeSkills />
