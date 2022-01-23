@@ -6,6 +6,7 @@ import { Grid } from "@mui/material";
 import styled from "styled-components";
 
 const PrimaryGrid = styled(Grid)`
+  padding-top: 25px;
   background: #ddf5ff;
 `;
 
