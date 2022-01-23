@@ -1,7 +1,8 @@
+import CardBorderless from "../../shared/CardBorderless";
 import React from "react";
-import { SKILLS, KNOWN_SKILLS } from "./constants";
-import { Card, CardContent, Chip, List, Typography } from "@mui/material";
 import styled from "styled-components";
+import { CardContent, Chip, List, Typography } from "@mui/material";
+import { KNOWN_SKILLS, SKILLS } from "./constants";
 
 const ChipListItem = styled.li`
   margin: 2px;
@@ -10,7 +11,7 @@ const ChipListItem = styled.li`
 
 const ResumeSkills = () => {
   return (
-    <Card variant="elevation">
+    <CardBorderless>
       <CardContent>
         <Typography variant="h5" gutterBottom component="div">
           {SKILLS}
@@ -18,14 +19,14 @@ const ResumeSkills = () => {
         <List>
           {KNOWN_SKILLS.map(({ skillColor, skillLabel }) => {
             return (
-              <ChipListItem>
+              <ChipListItem key={skillLabel}>
                 <Chip key={skillLabel} color={skillColor} label={skillLabel} />
               </ChipListItem>
             );
           })}
         </List>
       </CardContent>
-    </Card>
+    </CardBorderless>
   );
 };
 

@@ -1,10 +1,11 @@
+import CardBorderless from "../../shared/CardBorderless";
 import React from "react";
+import { CardContent, Typography } from "@mui/material";
 import { OBJECTIVE, OBJECTIVE_DESCRIPTION } from "./constants";
-import { Card, CardContent, Typography } from "@mui/material";
 
 const ResumeObjective = () => {
   return (
-    <Card variant="elevation">
+    <CardBorderless>
       <CardContent>
         <Typography variant="h5" gutterBottom component="div">
           {OBJECTIVE}
@@ -13,7 +14,7 @@ const ResumeObjective = () => {
           {OBJECTIVE_DESCRIPTION}
         </Typography>
       </CardContent>
-    </Card>
+    </CardBorderless>
   );
 };
 

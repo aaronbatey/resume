@@ -1,11 +1,12 @@
-import React from "react";
-import { Avatar, Card, CardContent, Typography } from "@mui/material";
+import CardBorderless from "../../shared/CardBorderless";
 import profilePic from "../../../public/images/profile_photo.png";
+import React from "react";
+import { Avatar, CardContent, Typography } from "@mui/material";
 import { PERSONAL_DETAILS } from "./constants";
 
 const ResumePersonalDetails = () => {
   return (
-    <Card variant="elevation">
+    <CardBorderless>
       <CardContent>
         <Avatar alt={PERSONAL_DETAILS.name} src={profilePic.src} />
         <Typography variant="h5" gutterBottom component="div">
@@ -15,7 +16,7 @@ const ResumePersonalDetails = () => {
           {PERSONAL_DETAILS.jobTitle}
         </Typography>
       </CardContent>
-    </Card>
+    </CardBorderless>
   );
 };
 

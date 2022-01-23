@@ -1,9 +1,9 @@
+import CardBorderless from "../../shared/CardBorderless";
 import GetIcon from "../../shared/GetIcon";
 import React, { Fragment } from "react";
 import { CONTACT_INFO } from "./constants";
 import {
   Avatar,
-  Card,
   CardContent,
   Divider,
   List,
@@ -14,7 +14,7 @@ import {
 
 const ResumeContactInfo = () => {
   return (
-    <Card variant="elevation">
+    <CardBorderless>
       <CardContent>
         <List>
           {CONTACT_INFO.map(({ contactTitle, contactIcon }, i) => {
@@ -34,7 +34,7 @@ const ResumeContactInfo = () => {
           })}
         </List>
       </CardContent>
-    </Card>
+    </CardBorderless>
   );
 };
 

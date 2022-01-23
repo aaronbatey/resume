@@ -1,9 +1,9 @@
+import CardBorderless from "../../shared/CardBorderless";
 import GetIcon from "../../shared/GetIcon";
 import React, { Fragment } from "react";
 import { EDUCATION, PAST_EDUCATION } from "./constants";
 import {
   Avatar,
-  Card,
   CardContent,
   Divider,
   List,
@@ -15,7 +15,7 @@ import {
 
 const ResumeEducation = () => {
   return (
-    <Card variant="elevation">
+    <CardBorderless>
       <CardContent>
         <Typography variant="h5" gutterBottom component="div">
           {EDUCATION}
@@ -49,7 +49,7 @@ const ResumeEducation = () => {
           )}
         </List>
       </CardContent>
-    </Card>
+    </CardBorderless>
   );
 };
 

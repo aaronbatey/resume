@@ -1,9 +1,9 @@
+import CardBorderless from "../../shared/CardBorderless";
 import GetIcon from "../../shared/GetIcon";
 import React, { Fragment } from "react";
 import { EXPERIENCE, PAST_EXPERIENCE } from "./constants";
 import {
   Avatar,
-  Card,
   CardContent,
   Divider,
   List,
@@ -15,7 +15,7 @@ import {
 
 const ResumeExperience = () => {
   return (
-    <Card variant="elevation">
+    <CardBorderless>
       <CardContent>
         <Typography variant="h5" gutterBottom component="div">
           {EXPERIENCE}
@@ -56,7 +56,7 @@ const ResumeExperience = () => {
           )}
         </List>
       </CardContent>
-    </Card>
+    </CardBorderless>
   );
 };
 
