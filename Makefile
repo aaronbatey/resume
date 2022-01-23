@@ -22,6 +22,10 @@ build: ## build app
 start: ## Run app
 	yarn dev
 
+.PHONEY: lint
+lint: ## runs linter
+	yarn lint
+
 .PHONEY: kill-node-proc
 kill-node-proc:  ## kill all node process attached to port 3000
 	@sudo sleep 0.001;
