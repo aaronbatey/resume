@@ -6,12 +6,12 @@ import ResumeObjective from "../ResumeObjective";
 const renderComponent = () => render(<ResumeObjective />);
 
 describe("ResumeObjective", () => {
-  it("should display the Objective Section", () => {
+  it("should display the About Me Section", () => {
     const { queryByText } = renderComponent();
-    expect(queryByText("Objective")).toBeInTheDocument();
+    expect(queryByText("About Me")).toBeInTheDocument();
     expect(
       queryByText(
-        "A hardworking developer looking to apply creative and technical skills in a professional environment, developing knowledge in the process."
+        "I am a software developer that has over 6 years professional experience in the field. I have worked on everything from building websites for local businesses to building web applications that are used globally. Before I dedicated my life to code, I was working professionally in the arts, which gives me a creative edge to my work."
       )
     ).toBeInTheDocument();
   });
