@@ -3,26 +3,26 @@ export const EXPERIENCE = "Experience";
 export const PAST_EXPERIENCE = [
   {
     jobIcon: "SchoolIcon",
-    jobTitle: "Full Stack Developer",
+    jobTitle: "Full Stack Developer II",
     companyName: "Prodigy",
     startDate: "March 2021",
     endDate: "Present",
     description:
-      "Responsible for developing tutoring software with Postgresql, Prisma, Node.js, NestJS, GraphQL, React, and Next.js for a growing math game company. Worked within a close knit startup project to provide customer and tutor portals to manage and schedule tutoring sessions on a regular cadence.",
+      "Responsible for developing tutoring software with Postgresql, Prisma, Node.js, NestJS, GraphQL, React, and Next.js for a growing math game company. Worked within a close knit startup project to provide customer and tutor portals to manage and schedule tutoring sessions on a regular cadence. Worked as a mentor for co-op developers through pair programming, as well as led agile ceremonies such as demos and retrospectives.",
   },
   {
     jobIcon: "ShowChartIcon",
-    jobTitle: "Front End Web Developer",
+    jobTitle: "Front End Web Developer II",
     companyName: "Q4",
     startDate: "August 2020",
     endDate: "March 2021",
     description:
-      "Responsible for developing the front end of elegant Investor relations websites using Javascript, Sass, Mustache.js, JQuery and HTML. Worked on JQuery widgets that calculate and display important stock information such as dividends, balance sheets, press releases and various other investor relations content.",
+      "Responsible for developing the front end of elegant Investor relations websites using Javascript, Sass, Mustache.js, JQuery and HTML. Worked on JQuery widgets that calculate and display important stock information such as dividends, balance sheets, press releases and various other investor relations content. Worked as a mentor to other developers and led projects that improved workflows.",
   },
   {
     jobIcon: "PeopleIcon",
     jobTitle: "Software Developer",
-    companyName: "Grapevine6",
+    companyName: "Grapevine6 (LiveSocial)",
     startDate: "March 2019",
     endDate: "August 2020",
     description:
